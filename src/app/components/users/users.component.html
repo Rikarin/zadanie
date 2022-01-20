@@ -1,0 +1,12 @@
+<header>
+  <h1>Listing</h1>
+  <input placeholder="Search" />
+</header>
+
+<div class="list">
+  <user-card
+    *ngFor="let user of users$ | async"
+    [user]="user"
+    [routerLink]="'/user/' + user.id"
+  ></user-card>
+</div>

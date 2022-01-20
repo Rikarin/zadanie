@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 12px;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, auto);
+}
+
+user-card:nth-child(even) {
+  background-color: var(--secondary-color-alt);
+}

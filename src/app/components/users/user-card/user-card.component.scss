@@ -1,0 +1,30 @@
+:host {
+  width: 200px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: var(--elevation-high);
+
+  &:hover {
+    border: 3px solid var(--primary-color);
+    padding: 7px;
+  }
+}
+
+.abbreviation {
+  font-size: 3rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+  font-size: .8rem;
+}
